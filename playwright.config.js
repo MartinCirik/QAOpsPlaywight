@@ -14,7 +14,8 @@ const config =({
   expect: {
   timeout: 5000,
 },
-reporter:'html',
+reporter: process.env.CI ? 'blob' : 'html'
+,
   use: {
     actionTimeout: 10*1000,
     navigationTimeout: 30*1000,
