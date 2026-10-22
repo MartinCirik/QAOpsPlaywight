@@ -1,9 +1,10 @@
-name: Playwright Tests
+name: name: Playwright Docker Sharding Tests
 on:
   push:
-    branches: [ main, master,septCut ]
+    branches: [ main, master, septCut, feature/sharding ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ main, master, feature/sharding ]
+
  
 jobs:
   test:
